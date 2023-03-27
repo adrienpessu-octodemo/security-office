@@ -1,0 +1,8 @@
+### ################################################################################################################
+###             DEVSECOPS / SECURITY
+###
+### Any change to the security workflow should be reviewed by the security team
+### Security Office Documentation : 
+###     https://fluffy-chainsaw-ey2jnez.pages.github.io/security/
+.github/workflows/security*.yml     @ghas-toulouse-demo/security-office
+.github/workflows/security*.yaml    @ghas-toulouse-demo/security-office

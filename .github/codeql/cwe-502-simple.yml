@@ -1,0 +1,10 @@
+# See https://github.blog/changelog/2021-07-19-codeql-code-scanning-new-severity-levels-for-security-alerts/
+# for more information
+name: "Toulouse default CodeQL Configuration"
+disable-default-queries: true
+queries:
+  - uses: security-extended
+  - uses: security-and-quality
+query-filters:
+- include:
+    tags: /cwe-502/

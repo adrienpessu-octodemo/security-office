@@ -1,0 +1,13 @@
+{
+  "extensions": [
+    "github.vscode-codeql",
+    "vsls-contrib.codetour"
+  ],
+   "customizations": {
+    "codespaces": {
+      "openFiles": ["README.md"]
+    }
+  },
+  "onCreateCommand": "bash .devcontainer/onCreateCommand.sh",
+  "postCreateCommand": "bash .devcontainer/postCreateCommand.sh"
+}

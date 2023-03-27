@@ -1,0 +1,33 @@
+<!DOCTYPE qhelp PUBLIC
+  "-//Semmle//qhelp//EN"
+  "qhelp.dtd">
+<qhelp>
+
+
+<overview>
+<p>Avoid removing PMD warning. PMD is used to increase quality and security of the application code.</p>
+
+</overview>
+<recommendation>
+
+<p>
+First, instead of removing the warning, you should try to fix the issue if this is possible.
+</p>
+
+<p>
+If this is a false positive or a bad configuration, you should ask the team responsible for the PMD configuration to fix it.
+</p>
+
+<p>
+If you keep the suppresswarning note, you should add a comment explaining why the warning is suppressed.
+</p>
+
+
+</recommendation>
+
+<references>
+  <li><a href="https://pmd.github.io/"> PMD Website</a></li>
+  <li><a href="https://github.com/ghas-toulouse-demo/security-office"> Security Office Repository</a></li>
+</references>
+
+</qhelp>

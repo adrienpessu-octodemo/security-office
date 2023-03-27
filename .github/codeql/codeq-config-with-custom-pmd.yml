@@ -1,0 +1,6 @@
+name: "Custom CodeQL configuration"
+
+queries:
+  - uses: security-and-quality
+  - uses: security-extended
+  - uses: ghas-toulouse-demo/security-office/custom-codeql-queries/java/suppresswarnings-pmd.ql@main

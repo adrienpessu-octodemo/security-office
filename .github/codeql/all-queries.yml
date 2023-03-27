@@ -1,0 +1,6 @@
+# See https://github.blog/changelog/2021-07-19-codeql-code-scanning-new-severity-levels-for-security-alerts/
+# for more information
+name: "Toulouse CodeQL Configuration : All  Sec & Quality"
+queries:
+  - uses: security-extended
+  - uses: security-and-quality
