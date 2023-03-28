@@ -1,1 +1,8 @@
-
+name: Python
+packs:
+  - codeql/python-queries
+query-filters:
+- exclude:
+    problem.severity:
+      - warning
+      - recommendation
