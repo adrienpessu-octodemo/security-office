@@ -1,6 +1,6 @@
 name: Python
-packs:
-  - codeql/python-queries
+queries:
+  - uses: security-and-quality
 query-filters:
 - exclude:
     problem.severity:
