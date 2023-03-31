@@ -8,7 +8,6 @@ query-filters:
     - problem
     - path-problem
     precision:
-    - high
     - very-high
 - exclude:
     kind:
@@ -18,10 +17,10 @@ query-filters:
     problem.severity:
       - error
       - warning
-- include:
+- exclude:
     kind:
     - diagnostic
-- include:
+- exclude:
     kind:
     - metric
     tags contain:
