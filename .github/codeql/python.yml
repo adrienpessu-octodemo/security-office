@@ -4,4 +4,35 @@ queries:
   - uses: security-and-quality
 query-filters:
 - include:
-    tags: /cwe-*/
+    kind:
+    - problem
+    - path-problem
+    precision:
+    - high
+    - very-high
+- exclude:
+    kind:
+    - problem
+    - path-problem
+    precision: medium
+    problem.severity:
+      - error
+      - warning
+- include:
+    kind:
+    - diagnostic
+- include:
+    kind:
+    - metric
+    tags contain:
+    - summary
+- exclude:
+    deprecated: //
+- exclude:
+    query path:
+      - /^experimental\/.*/
+      - Metrics/Summaries/FrameworkCoverage.ql
+      - /Diagnostics/Internal/.*/
+- exclude:
+    tags contain:
+      - modelgenerator
