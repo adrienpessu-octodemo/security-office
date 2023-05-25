@@ -1,0 +1,61 @@
+name: CodeQL example of required workflow
+
+on:
+  pull_request:
+
+jobs:
+  testing:
+    runs-on: ubuntu-22.04
+    
+    permissions:
+      contents: write
+      security-events: write
+
+    env:
+      database_name: my_test
+      language: javascript
+      results_file: ${{ github.workspace }}/results.sarif
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Install
+        run: |
+          wget https://github.com/github/codeql-cli-binaries/releases/download/v2.13.1/codeql-linux64.zip
+          unzip codeql-linux64.zip
+          echo "$GITHUB_WORKSPACE/codeql" >> $GITHUB_PATH
+
+      - name: Scan
+        run: |
+          codeql version
+          codeql pack download codeql/${{ env.language }}-queries
+          codeql database create --language=${{ env.language }} --source-root $GITHUB_WORKSPACE ${{ env.database_name }}
+          codeql database analyze ${{ env.database_name }} --format sarif-latest --output ${{ env.results_file }} codeql/javascript-queries --download
+          gzip -c ${{ env.results_file }} | base64 -w0 >> ${{ env.results_file }}.b64
+        
+      - name: Attach artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: security
+          path: |
+            ${{ env.results_file }}
+            ${{ env.results_file }}.b64
+          
+      - name: Updload results
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const fs = require('fs');
+            const data = fs.readFileSync(`${process.env.results_file}.b64`).toString();
+            
+            core.info(`Uploading sarif: ${context.ref} :: ${context.sha}`);
+            
+            const result = await github.rest.codeScanning.uploadSarif({
+              ...context.repo,
+              commit_sha: context.sha,
+              ref: context.ref,
+              sarif: data,
+            });
+
+            core.info(JSON.stringify(result, null, 2));
