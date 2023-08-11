@@ -26,4 +26,5 @@ where
   |
     sink = item.getValue()
   )
-select sink, "This hardcoded value has been used as credentials"
+select dict.getParentNode(), dict.getParent(), sink, "This hardcoded value is $@.", sink,
+  "used as credentials"
