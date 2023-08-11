@@ -7,6 +7,7 @@
  * @precision medium
  * @id py/hardcoded-credentials-custom
  * @languages python
+ * @language python
  * @tags security
  *       external/cwe/cwe-259
  *       external/cwe/cwe-321
