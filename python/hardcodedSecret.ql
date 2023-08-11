@@ -1,7 +1,6 @@
 /**
  * @name Hard-coded credentials
  * @description Credentials are hard coded in the source code of the application.
- * @kind path-problem
  * @problem.severity error
  * @security-severity 9.8
  * @precision medium
@@ -26,5 +25,4 @@ where
   |
     sink = item.getValue()
   )
-select dict.getParentNode(), dict.getParent(), sink, "This hardcoded value is $@.", sink,
-  "used as credentials"
+select sink, "This hardcoded value is used as credentials"
