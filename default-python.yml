@@ -2,7 +2,7 @@ name: "My CodeQL config"
 
 disable-default-queries: true
 
-packs:
+queries:
   # > Python
   - ./python/hardcodedSecret.ql
 
