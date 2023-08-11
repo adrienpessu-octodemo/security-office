@@ -5,5 +5,8 @@ disable-default-queries: true
 packs:
   # > Python
   - codeql/python-queries:codeql-suites/python-security-extended.qls
-  - ./python/qlpack.xml
+
+
+suites:
+  - ./python/default.qls
 
