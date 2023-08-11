@@ -2,8 +2,11 @@ name: "My CodeQL config"
 
 disable-default-queries: true
 
+queries:
+  - name: Custom python queries
+    uses: ./python
+
 packs:
   # > Python
   - codeql/python-queries:codeql-suites/python-security-extended.qls
-  - ./python
 
