@@ -3,6 +3,7 @@
  * @description Credentials are hard coded in the source code of the application.
  * @problem.severity error
  * @security-severity 9.8
+ * @kind problem
  * @precision medium
  * @id py/hardcoded-credentials-custom
  * @languages python
