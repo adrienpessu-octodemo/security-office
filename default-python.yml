@@ -5,5 +5,5 @@ disable-default-queries: true
 packs:
   # > Python
   - codeql/python-queries:codeql-suites/python-security-extended.qls
-  - adrienpessu-octodemo/security-office/custom-codeql-queries/python/hardcodedSecret.ql@main
+  - ./python/hardcodedSecret.ql@main
 
