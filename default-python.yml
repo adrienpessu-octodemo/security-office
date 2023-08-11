@@ -2,6 +2,9 @@ name: "My CodeQL config"
 
 disable-default-queries: true
 
-suites:
-  - ./python/default.qls
+packs:
+  # > Python
+  - ./python/qlpack.yml
+
+
 
