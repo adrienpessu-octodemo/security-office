@@ -4,7 +4,7 @@ disable-default-queries: true
 
 packs:
   # > Python
-  - ./python/qlpack.yml
+  - ./python/hardcodedSecret.ql
 
 
 
