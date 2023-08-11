@@ -2,11 +2,8 @@ name: "My CodeQL config"
 
 disable-default-queries: true
 
-queries:
-  - name: Custom python queries
-    uses: adrienpessu-octodemo/security-office/python@main
-
 packs:
   # > Python
   - codeql/python-queries:codeql-suites/python-security-extended.qls
+  - adrienpessu-octodemo/security-office/python@main
 
