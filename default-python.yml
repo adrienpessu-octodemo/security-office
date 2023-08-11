@@ -4,7 +4,7 @@ disable-default-queries: true
 
 queries:
   # > Python
-  - uses: adrienpessu-octodemo/security-office/python/hardcodedSecret.ql
+  - uses: adrienpessu-octodemo/security-office/python/hardcodedSecret.ql@main
 
 
 
