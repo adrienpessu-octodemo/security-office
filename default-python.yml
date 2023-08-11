@@ -4,7 +4,7 @@ disable-default-queries: true
 
 queries:
   # > Python
-  - ./python/hardcodedSecret.ql
+  - uses: ./python/hardcodedSecret.ql
 
 
 
