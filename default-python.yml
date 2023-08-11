@@ -4,7 +4,7 @@ disable-default-queries: true
 
 queries:
   - name: Custom python queries
-    uses: ./python
+    uses: adrienpessu-octodemo/security-office/python@main
 
 packs:
   # > Python
