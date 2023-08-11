@@ -1,0 +1,23 @@
+# https://codeql.github.com/docs/codeql-cli/creating-codeql-query-suites/
+
+- description: "adrienpessu's Python Suite"
+
+- queries: '.'
+  from: adrienpessu/codeql-python
+
+# Code Quality Queries
+- include:
+    tags contain:
+      - security
+      - correctness
+
+# Remove debugging, and audit queries
+- exclude:
+    tags contain:
+      - audit
+      - debugging
+
+# Remove local testing folders
+- exclude:
+    query path:
+      - /testing\/.*/
