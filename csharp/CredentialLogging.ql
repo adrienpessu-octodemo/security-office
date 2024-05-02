@@ -4,6 +4,7 @@
  * @id cs/credential-logging
  * @kind path-problem
  * @problem.severity error
+ * @security-severity 9.8
  * @precision high
  * @tags security
  *       cwe-532
