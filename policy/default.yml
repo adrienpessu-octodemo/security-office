@@ -1,6 +1,17 @@
 codescanning:
-  remediate:
-    all: 7
+  level: error
   conditions:
     ids:
-      - "java/sql-injection"
+      - "java/sql-injection" 
+dependabot:
+  level: high
+
+licensing:
+  conditions:
+    ids:
+      - GPL-*
+      - LGPL-*
+      - AGPL-*
+
+secretscanning:
+  level: all
