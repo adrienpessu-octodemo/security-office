@@ -32,6 +32,8 @@
        name.regexpMatch("(?i).*(puid|username|userid)(?!.*(characters|claimtype)).*")
        or
        name.regexpMatch("(?i).*(cert)(?!.*(format|name)).*")
+       or
+       name.regexpMatch("(CustomerInfo|CVV2|MotherMaidenName|ExpiryDate|NewPin|ClearCardNumber|Password|AsilKartNo|CardRefNumber|MainCardRefNumber|CartNo|CellPhoneNumber|Street|District|Answer|IBSerialNo|IdentityType|CardNo|CardNoLast6Digit|ShadowCardNumber|CardSerialNo|TCKN|CreditCardNo|PinNo|CustomersMagicQuestion|MotherName|FatherName|CitizenshipNumber|AddressDetail|MotherMaidenSurname|Addresses|SpouseTCKN|TotalIncome|NetSalary|AddressList|AddressListNew|SecurityImageId|DrivingLicenseNo|CitizenNumber|PaymentCreditCardNo|FirmName|IdentityNo|ReceiverAddress|PayerAdress|AddressListNewInformation|MonthlyIncome|TckNo|SenderAddress|OTP|VERIFICATIONCODE|SECURITYQUESTION)")
      )
    }
  }
@@ -57,20 +59,7 @@
  
  module LoggingFlow = TaintTracking::Global<LoggingConfig>;
  import LoggingFlow::PathGraph
- 
- /* control flow reaches */
- // from CredentialsSource source, Logging sink
- // where sink.asExpr().reachableFrom(source.asExpr())
- // select source, sink
- 
- /* partial flow */
- // int explorationLimit() { result = 20 }
- // module LoggingFlowPartial = LoggingFlow::FlowExplorationFwd<explorationLimit/0>;
- // import LoggingFlowPartial::PartialPathGraph
- // from LoggingFlowPartial::PartialPathNode source, LoggingFlowPartial::PartialPathNode node
- // where LoggingFlowPartial::partialFlow(source, node, _)
- // select node, "We reached this node from $@", source, "this source"
- 
+  
  /* data flow */
  from LoggingFlow::PathNode source, LoggingFlow::PathNode sink
  where LoggingFlow::flowPath(source, sink)
