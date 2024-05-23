@@ -1,13 +1,13 @@
 /**
  * @name Find data flows from a credential source to a logging sink
  * @description Find data flows from a credential source to a logging sink
- * @id cs/credential-logging
+ * @id cs/pii-logging
  * @kind path-problem
  * @problem.severity error
  * @security-severity 9.8
  * @precision high
  * @tags security
- *       cwe-532
+ *       cwe-359
  */
 
  import csharp
