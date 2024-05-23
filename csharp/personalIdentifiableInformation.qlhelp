@@ -1,0 +1,27 @@
+<!DOCTYPE qhelp PUBLIC
+  "-//Semmle//qhelp//EN"
+  "qhelp.dtd">
+<qhelp>
+<overview>
+<p>
+PII that are stored in an externallocation may be more vulnerable.
+</p>
+<p>
+Examples include log files, log stash system
+</p>
+
+</overview>
+<recommendation>
+
+<p>
+Ensure that informations is only stored encrypted in secure data locations.
+</p>
+
+</recommendation>
+<example>
+
+</example>
+<references>
+
+</references>
+</qhelp>
