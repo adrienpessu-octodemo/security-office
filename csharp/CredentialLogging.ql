@@ -32,8 +32,6 @@
        name.regexpMatch("(?i).*(puid|username|userid)(?!.*(characters|claimtype)).*")
        or
        name.regexpMatch("(?i).*(cert)(?!.*(format|name)).*")
-       or
-       name.regexpMatch("(?i).*(?!.*CustomerInfo)(?!.*CVV2)(?!.*MotherMaidenName)(?!.*ExpiryDate)(?!.*NewPin)(?!.*ClearCardNumber)(?!.*Password)(?!.*AsilKartNo)(?!.*CardRefNumber)(?!.*MainCardRefNumber)(?!.*CartNo)(?!.*CellPhoneNumber)(?!.*Street)(?!.*District)(?!.*Answer)(?!.*IBSerialNo)(?!.*IdentityType)(?!.*CardNo)(?!.*CardNoLast6Digit)(?!.*ShadowCardNumber)(?!.*CardSerialNo)(?!.*TCKN)(?!.*CreditCardNo)(?!.*PinNo)(?!.*CustomersMagicQuestion)(?!.*MotherName)(?!.*FatherName)(?!.*CitizenshipNumber)(?!.*AddressDetail)(?!.*MotherMaidenSurname)(?!.*Addresses)(?!.*SpouseTCKN)(?!.*TotalIncome)(?!.*NetSalary)(?!.*AddressList)(?!.*AddressListNew)(?!.*SecurityImageId)(?!.*DrivingLicenseNo)(?!.*CitizenNumber)(?!.*PaymentCreditCardNo)(?!.*FirmName)(?!.*IdentityNo)(?!.*ReceiverAddress)(?!.*PayerAdress)(?!.*AddressListNewInformation)(?!.*MonthlyIncome)(?!.*TckNo)(?!.*SenderAddress)(?!.*OTP)(?!.*VERIFICATIONCODE)(?!.*SECURITYQUESTION).*")
      )
    }
  }
