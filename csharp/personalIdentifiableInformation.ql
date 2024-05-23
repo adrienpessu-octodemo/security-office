@@ -27,109 +27,107 @@
    pragma[noinline]
    PersonalVar() {
      exists(string name | name = this.getName() |
-       name.regexpMatch("(?i).*(MobilePhoneNo).*")
+       name.regexpMatch("(?i).*[mM]obilePhoneNo.*")
  or
-       name.regexpMatch("(?i).*(AddressListNewInformation).*")
+       name.regexpMatch("(?i).*[aA]ddressListNewInformation.*")
  or
-       name.regexpMatch("(?i).*(CustomerInfo).*")
+       name.regexpMatch("(?i).*[cC]ustomerInfo.*")
  or
-       name.regexpMatch("(?i).*(CVV2).*")
+       name.regexpMatch("(?i).*[cC]VV2.*")
  or
-       name.regexpMatch("(?i).*(MotherMaidenName).*")
+       name.regexpMatch("(?i).*[mM]otherMaidenName.*")
  or
-       name.regexpMatch("(?i).*(ExpiryDate).*")
+       name.regexpMatch("(?i).*[eE]xpiryDate.*")
  or
-       name.regexpMatch("(?i).*(NewPin).*")
+       name.regexpMatch("(?i).*[nN]ewPin.*")
  or
-       name.regexpMatch("(?i).*(ClearCardNumber).*")
+       name.regexpMatch("(?i).*[cC]learCardNumber.*")
  or
-       name.regexpMatch("(?i).*(Password).*")
+       name.regexpMatch("(?i).*[aA]silKartNo.*")
  or
-       name.regexpMatch("(?i).*(AsilKartNo).*")
+       name.regexpMatch("(?i).*[cC]ardRefNumber.*")
  or
-       name.regexpMatch("(?i).*(CardRefNumber).*")
+       name.regexpMatch("(?i).*[mM]ainCardRefNumber.*")
  or
-       name.regexpMatch("(?i).*(MainCardRefNumber).*")
+       name.regexpMatch("(?i).*[cC]artNo.*")
  or
-       name.regexpMatch("(?i).*(CartNo).*")
+       name.regexpMatch("(?i).*[cC]ellPhoneNumber.*")
  or
-       name.regexpMatch("(?i).*(CellPhoneNumber).*")
+       name.regexpMatch("(?i).*[sS]treet.*")
  or
-       name.regexpMatch("(?i).*(Street).*")
+       name.regexpMatch("(?i).*District.*")
  or
-       name.regexpMatch("(?i).*(District).*")
+       name.regexpMatch("(?i).*[aA]nswer.*")
  or
-       name.regexpMatch("(?i).*(Answer).*")
+       name.regexpMatch("(?i).*IBSerialNo.*")
  or
-       name.regexpMatch("(?i).*(IBSerialNo).*")
+       name.regexpMatch("(?i).*IdentityType.*")
  or
-       name.regexpMatch("(?i).*(IdentityType).*")
+       name.regexpMatch("(?i).*[cC]ardNo.*")
  or
-       name.regexpMatch("(?i).*(CardNo).*")
+       name.regexpMatch("(?i).*[cC]ardNoLast6Digit.*")
  or
-       name.regexpMatch("(?i).*(CardNoLast6Digit).*")
+       name.regexpMatch("(?i).*[sS]hadowCardNumber.*")
  or
-       name.regexpMatch("(?i).*(ShadowCardNumber).*")
+       name.regexpMatch("(?i).*[cC]ardSerialNo.*")
  or
-       name.regexpMatch("(?i).*(CardSerialNo).*")
+       name.regexpMatch("(?i).*TCKN.*")
  or
-       name.regexpMatch("(?i).*(TCKN).*")
+       name.regexpMatch("(?i).*[cC]reditCardNo.*")
  or
-       name.regexpMatch("(?i).*(CreditCardNo).*")
+       name.regexpMatch("(?i).*PinNo.*")
  or
-       name.regexpMatch("(?i).*(PinNo).*")
+       name.regexpMatch("(?i).*[cC]ustomersMagicQuestion.*")
  or
-       name.regexpMatch("(?i).*(CustomersMagicQuestion).*")
+       name.regexpMatch("(?i).*[mM]otherName.*")
  or
-       name.regexpMatch("(?i).*(MotherName).*")
+       name.regexpMatch("(?i).*[fF]atherName.*")
  or
-       name.regexpMatch("(?i).*(FatherName).*")
+       name.regexpMatch("(?i).*[cC]itizenshipNumber.*")
  or
-       name.regexpMatch("(?i).*(CitizenshipNumber).*")
+       name.regexpMatch("(?i).*[aA]ddressDetail.*")
  or
-       name.regexpMatch("(?i).*(AddressDetail).*")
+       name.regexpMatch("(?i).*[mM]otherMaidenSurname.*")
  or
-       name.regexpMatch("(?i).*(MotherMaidenSurname).*")
+       name.regexpMatch("(?i).*[aA]ddresses.*")
  or
-       name.regexpMatch("(?i).*(Addresses).*")
+       name.regexpMatch("(?i).*[sS]pouseTCKN.*")
  or
-       name.regexpMatch("(?i).*(SpouseTCKN).*")
+       name.regexpMatch("(?i).*TotalIncome.*")
  or
-       name.regexpMatch("(?i).*(TotalIncome).*")
+       name.regexpMatch("(?i).*[nN]etSalary.*")
  or
-       name.regexpMatch("(?i).*(NetSalary).*")
+       name.regexpMatch("(?i).*[aA]ddressList.*")
  or
-       name.regexpMatch("(?i).*(AddressList).*")
+       name.regexpMatch("(?i).*[aA]ddressListNew.*")
  or
-       name.regexpMatch("(?i).*(AddressListNew).*")
+       name.regexpMatch("(?i).*[sS]ecurityImageId.*")
  or
-       name.regexpMatch("(?i).*(SecurityImageId).*")
+       name.regexpMatch("(?i).*DrivingLicenseNo.*")
  or
-       name.regexpMatch("(?i).*(DrivingLicenseNo).*")
+       name.regexpMatch("(?i).*[cC]itizenNumber.*")
  or
-       name.regexpMatch("(?i).*(CitizenNumber).*")
+       name.regexpMatch("(?i).*PaymentCreditCardNo.*")
  or
-       name.regexpMatch("(?i).*(PaymentCreditCardNo).*")
+       name.regexpMatch("(?i).*[fF]]irmName.*")
  or
-       name.regexpMatch("(?i).*(FirmName).*")
+       name.regexpMatch("(?i).*IdentityNo.*")
  or
-       name.regexpMatch("(?i).*(IdentityNo).*")
+       name.regexpMatch("(?i).*[rR]]eceiverAddress.*")
  or
-       name.regexpMatch("(?i).*(ReceiverAddress).*")
+       name.regexpMatch("(?i).*[pP]]ayerAdress.*")
  or
-       name.regexpMatch("(?i).*(PayerAdress).*")
+       name.regexpMatch("(?i).*[mM]onthlyIncome.*")
  or
-       name.regexpMatch("(?i).*(MonthlyIncome).*")
+       name.regexpMatch("(?i).*TckNo.*")
  or
-       name.regexpMatch("(?i).*(TckNo).*")
+       name.regexpMatch("(?i).*[sS]enderAddress.*")
  or
-       name.regexpMatch("(?i).*(SenderAddress).*")
+       name.regexpMatch("(?i).*OTP.*")
  or
-       name.regexpMatch("(?i).*(OTP).*")
+       name.regexpMatch("(?i).*VERIFICATIONCODE.*")
  or
-       name.regexpMatch("(?i).*(VERIFICATIONCODE).*")
- or
-       name.regexpMatch("(?i).*(SECURITYQUESTION).*")
+       name.regexpMatch("(?i).*[sS]ECURITYQUESTION.*")
      )
    }
  }
