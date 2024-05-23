@@ -113,9 +113,9 @@
  or
        name.regexpMatch("(?i).*IdentityNo.*")
  or
-       name.regexpMatch("(?i).*[rR]]eceiverAddress.*")
+       name.regexpMatch("(?i).*[rR]eceiverAddress.*")
  or
-       name.regexpMatch("(?i).*[pP]]ayerAdress.*")
+       name.regexpMatch("(?i).*[pP]ayerAdress.*")
  or
        name.regexpMatch("(?i).*[mM]onthlyIncome.*")
  or
@@ -157,5 +157,5 @@
  /* data flow */
  from LoggingFlow::PathNode source, LoggingFlow::PathNode sink
  where LoggingFlow::flowPath(source, sink)
- select sink.getNode(), source, sink, "A personal information has been logged $@", sink.getNode(),
+ select sink.getNode(), source, sink, "A personal information has been logged $@", source.getNode(),
    " source"
