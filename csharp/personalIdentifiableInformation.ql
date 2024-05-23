@@ -1,6 +1,6 @@
 /**
- * @name Find data flows from a credential source to a logging sink
- * @description Find data flows from a credential source to a logging sink
+ * @name Find data flows from a personal information source to a logging sink
+ * @description Find data flows from a personal information source to a logging sink
  * @id cs/pii-logging
  * @kind path-problem
  * @problem.severity error
