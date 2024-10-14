@@ -3,6 +3,7 @@ codescanning:
   conditions:
     ids:
       - "java/sql-injection" 
+      - "java/ssrf"
 dependabot:
   level: high
 
