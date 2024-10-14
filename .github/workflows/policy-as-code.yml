@@ -8,8 +8,8 @@ jobs:
     runs-on: ubuntu-latest
     
     permissions:
-      content: read
-      security_events: read
+      contents: read
+      security-events: read
       # pull request summaries
       pull-requests: write
 
