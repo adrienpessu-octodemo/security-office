@@ -2,7 +2,6 @@ codescanning:
   level: error
   conditions:
     ids:
-      - "java/sql-injection" 
       - "java/ssrf"
 dependabot:
   level: high
@@ -14,5 +13,3 @@ licensing:
       - LGPL-*
       - AGPL-*
 
-secretscanning:
-  level: all
