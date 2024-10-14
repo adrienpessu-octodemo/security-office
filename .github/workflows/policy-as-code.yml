@@ -1,0 +1,27 @@
+name: Policy as Code
+
+on:
+  pull_request:
+
+jobs:
+  testing:
+    runs-on: ubuntu-latest
+    
+    permissions:
+      content: read
+      security_events: read
+      # pull request summaries
+      pull-requests: write
+
+    steps:
+      - name: Advance Security Policy as Code
+        uses: advanced-security/policy-as-code@v2.9.0
+        with:
+          # The owner/repo of where the policy is stored
+          policy: adrienpessu-octodemo/security-office
+          # The local (within the workspace) or repository
+          policy-path: policy/default.yml
+          # The branch you want to target
+          policy-branch: main
+
+
