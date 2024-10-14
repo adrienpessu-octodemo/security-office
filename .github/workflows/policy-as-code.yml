@@ -10,6 +10,7 @@ jobs:
     permissions:
       contents: read
       security-events: read
+      checks: read
       # pull request summaries
       pull-requests: write
 
