@@ -24,5 +24,6 @@ jobs:
           policy-path: policy/default.yml
           # The branch you want to target
           policy-branch: main
+          token: ${{ secrets.ACCESS_TOKEN }}
 
 
