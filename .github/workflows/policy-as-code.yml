@@ -25,5 +25,6 @@ jobs:
           # The branch you want to target
           policy-branch: main
           token: ${{ secrets.ACCESS_TOKEN }}
+          ref: refs/heads/main
 
 
