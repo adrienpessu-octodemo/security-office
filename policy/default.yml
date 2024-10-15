@@ -1,8 +1,5 @@
 codescanning:
-  level: error
-  conditions:
-    ids:
-      - "java/ssrf"
+  level: medium
 dependabot:
   level: high
 
